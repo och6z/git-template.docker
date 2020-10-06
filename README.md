@@ -11,8 +11,8 @@ xhost +local:docker
 ```
 ```bash
 docker container run \
-	--interactive \
-	--tty \
+    --interactive \
+    --tty \
     --volume /tmp/.X11-unix:/tmp/.X11-unix \
     --env DISPLAY=unix$DISPLAY \
     --name container-name image-name:version
